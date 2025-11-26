@@ -21,11 +21,7 @@ public class ProductController {
     private ProductService service;
 
 
-    @GetMapping
-    public String greet()
-    {
-        return "hello world";
-    }
+
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getAllProducts()
     {
